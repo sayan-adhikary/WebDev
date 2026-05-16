@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvenListnier</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+    <input type="text" id="inp">
+    <button id ="btn" class="btn">submit</button>
+
+    <script>
+        let btn = document.getElementsByClassName("btn")[0];
+        btn.addEventListener("click", ()=>{
+            alert("chup");
+        })
+
+        // let inp = document.getElementById("inp");
+        // inp.addEventListener("keyup", (e)=>{
+        //     alert(e.key);
+        // })
+
+        let inp = document.getElementById("inp");
+        inp.addEventListener("keydown", (e)=>{
+            alert(e.key);
+        })
+
+        let box = document.getElementById("box1");
+        box.style.cursor = 'pointer'
+        box.addEventListener("mouseover", ()=>{
+            box.style.backgroundColor = 'lightblue';
+        })
+        box.addEventListener("mouseout", ()=>{
+            box.style.backgroundColor = 'blue';
+        })
+        box.addEventListener("mousedown", ()=>{
+            box.style.backgroundColor = 'red';
+        })
+        box.addEventListener("mouseleave", ()=>{
+            box.style.backgroundColor = 'black';
+        })
+    </script>
+</body>
+</html>

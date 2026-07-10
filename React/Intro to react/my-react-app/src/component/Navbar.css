@@ -1,0 +1,15 @@
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+ul li {
+    list-style-type: none;
+}
+div .nav{
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
